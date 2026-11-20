@@ -1,14 +1,19 @@
+"""Servicio de alquiler de equipos. El costo depende de la duración y de la cantidad de unidades."""
+
 from modelos.servicio import Servicio
 from excepciones import ServicioInvalidoError
 
 
 class AlquilerEquipo(Servicio):
+    """Alquiler de equipos, derivado de Servicio."""
 
     def __init__(self, id, nombre, tarifa_base, cantidad_unidades):
+        """Crea un alquiler de equipos con la cantidad de unidades."""
         self.cantidad_unidades = cantidad_unidades
         super().__init__(id, nombre, tarifa_base)
 
     def validar_parametros(self):
+        """Valida que la cantidad de unidades sea un entero mayor que cero."""
         super().validar_parametros()
 
         if isinstance(self.cantidad_unidades, bool) or not isinstance(self.cantidad_unidades, int):
@@ -22,6 +27,7 @@ class AlquilerEquipo(Servicio):
             )
 
     def calcular_costo(self, duracion):
+        """Calcula el costo: tarifa × duración × cantidad de unidades."""
         if isinstance(duracion, bool) or not isinstance(duracion, (int, float)):
             raise ServicioInvalidoError(
                 "La duración debe ser numérica."
@@ -35,6 +41,7 @@ class AlquilerEquipo(Servicio):
         return self.tarifa_base * duracion * self.cantidad_unidades
 
     def describir(self):
+        """Describe el alquiler de equipos en texto."""
         return (
             f"Alquiler de equipo: {self.nombre}. "
             f"Cantidad: {self.cantidad_unidades} unidades. "

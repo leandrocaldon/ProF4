@@ -31,6 +31,7 @@ class GestorSistema:
     }
 
     def __init__(self):
+        """Crea el gestor con listas internas vacías de clientes, servicios y reservas."""
         self.__clientes = []             # clientes registrados
         self.__servicios = []            # servicios creados
         self.__reservas = []             # reservas hechas
@@ -39,14 +40,17 @@ class GestorSistema:
     # ---------- consultas (solo lectura) ----------
     @property
     def clientes(self):
+        """Devuelve la lista de clientes registrados."""
         return tuple(self.__clientes)
 
     @property
     def servicios(self):
+        """Devuelve la lista de servicios registrados."""
         return tuple(self.__servicios)
 
     @property
     def reservas(self):
+        """Devuelve la lista de reservas creadas."""
         return tuple(self.__reservas)
 
     def buscar_cliente(self, documento):
@@ -150,12 +154,15 @@ class GestorSistema:
             registrar_log("INFO", "Operación de creación de reserva finalizada.")
 
     def confirmar_reserva(self, id_reserva):
+        """Confirma una reserva por su id."""
         return self.__cambiar_reserva(id_reserva, "confirmar", lambda r: r.confirmar())
 
     def cancelar_reserva(self, id_reserva):
+        """Cancela una reserva por su id."""
         return self.__cambiar_reserva(id_reserva, "cancelar", lambda r: r.cancelar())
 
     def procesar_reserva(self, id_reserva, impuesto=None, descuento=None):
+        """Procesa una reserva por su id, con impuesto y descuento opcionales."""
         return self.__cambiar_reserva(id_reserva, "procesar", lambda r: r.procesar(impuesto, descuento))
 
     def __cambiar_reserva(self, id_reserva, accion, operacion):
@@ -175,5 +182,6 @@ class GestorSistema:
 
     # ---------- resumen ----------
     def resumen(self):
+        """Devuelve un resumen de clientes, servicios y reservas."""
         return (f"Clientes: {len(self.__clientes)} | Servicios: {len(self.__servicios)} | "
                 f"Reservas: {len(self.__reservas)}")

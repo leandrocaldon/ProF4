@@ -8,6 +8,7 @@ from utilidades.logger import configurar_logger
 
 
 def main() -> None:
+    """Ejecuta la simulación del sistema."""
     configurar_logger()      # prepara logs/sistema.log
     ejecutar_simulacion()    # corre las 10 operaciones
 

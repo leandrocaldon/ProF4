@@ -26,6 +26,7 @@ class Reserva(Entidad):
     """Reserva de un servicio hecha por un cliente."""
 
     def __init__(self, cliente, servicio, duracion):
+        """Crea una reserva en estado PENDIENTE, validando la duración."""
         super().__init__()  # Entidad genera el id único
         if cliente is None or servicio is None:
             raise ReservaError("La reserva necesita un cliente y un servicio.")
@@ -48,22 +49,27 @@ class Reserva(Entidad):
     # ---------- propiedades de solo lectura ----------
     @property
     def cliente(self):
+        """Devuelve el cliente de la reserva."""
         return self._cliente
 
     @property
     def servicio(self):
+        """Devuelve el servicio reservado."""
         return self._servicio
 
     @property
     def duracion(self):
+        """Devuelve la duración de la reserva."""
         return self._duracion
 
     @property
     def estado(self):
+        """Devuelve el estado actual de la reserva."""
         return self._estado
 
     @property
     def costo(self):
+        """Devuelve el costo calculado al procesar la reserva (None si aún no se procesa)."""
         return self._costo
 
     # ---------- cambios de estado ----------
