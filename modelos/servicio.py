@@ -11,6 +11,7 @@ class Servicio(Entidad):
         self.tarifa_base = tarifa_base
         self.validar_parametros()
 
+   @abstractmethod
     def validar_parametros(self):
         if not isinstance(self.nombre, str) or not self.nombre.strip():
             raise ServicioInvalidoError("El nombre del servicio no puede estar vacío.")
