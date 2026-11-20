@@ -1,5 +1,5 @@
 from abc import abstractmethod
-from modelos.entidad import Entidad
+from entidad import Entidad
 from excepciones import ServicioInvalidoError
 
 
