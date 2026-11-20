@@ -1,10 +1,3 @@
-# ======================================================================
-# INTEGRANTE 3 - Servicios (Lauren)
-# ESTADO: código real de la rama feature/servicios, sin cambios. Funciona.
-# NOTA: solo corre cuando la Entidad acepta el id (ver modelos/entidad.py).
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 from modelos.servicio import Servicio
 from excepciones import ServicioInvalidoError
 

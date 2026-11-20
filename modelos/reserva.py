@@ -1,9 +1,3 @@
-# ======================================================================
-# INTEGRANTE 4 - Reservas y cálculos (Jefferson)
-# ESTADO: código real, es lo que Jefferson sube a su rama.
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 """
 reserva.py
 Clase Reserva: une cliente, servicio, duración y estado.

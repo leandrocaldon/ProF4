@@ -1,9 +1,3 @@
-# ======================================================================
-# INTEGRANTE 5 - Gestor, logs y simulación (rol sin asignar en el grupo)
-# ESTADO: hecho por Jefferson como propuesta para que el grupo lo revise.
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 """
 gestor.py
 GestorSistema: guarda en listas internas los clientes, servicios y reservas

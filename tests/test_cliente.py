@@ -1,11 +1,3 @@
-# ======================================================================
-# INTEGRANTE 2 - Clientes (Sebastián)
-# ESTADO: código real de main, sin cambios
-# MOVIDO: de la raíz del repo a tests/test_cliente.py, donde dice el plan.
-# NOTA: usa pytest, hay que instalarlo con: pip install pytest
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 """
 Pruebas unitarias para la clase Cliente.
 """

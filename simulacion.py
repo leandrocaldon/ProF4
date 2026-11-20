@@ -1,10 +1,3 @@
-# ======================================================================
-# INTEGRANTE 5 - Gestor, logs y simulación (rol sin asignar en el grupo)
-# ESTADO: hecho por Jefferson como propuesta para que el grupo lo revise.
-# Los datos son de ejemplo, hechos a propósito para probar casos buenos y malos.
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 """
 simulacion.py
 Simula 10 operaciones del sistema Software FJ, válidas e inválidas,

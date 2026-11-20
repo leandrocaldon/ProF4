@@ -1,12 +1,3 @@
-# ======================================================================
-# INTEGRANTE 2 - Clientes (Sebastián)
-# ESTADO: código real de main, con 1 cambio (buscar >>> CAMBIO)
-# MOVIDO: de la raíz del repo a modelos/entidad.py.
-#   Por qué: cliente.py y servicio.py lo importan como 'from modelos.entidad import Entidad'
-#   y en la raíz no lo encuentran (ModuleNotFoundError).
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 """
 Modulo que contiene la clase base de las entidades.
 """

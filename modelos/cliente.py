@@ -1,12 +1,3 @@
-# ======================================================================
-# INTEGRANTE 2 - Clientes (Sebastián)
-# ESTADO: código real de main, con 1 cambio (buscar >>> CAMBIO)
-# MOVIDO: de la raíz del repo a modelos/cliente.py.
-#   Por qué: el test lo importa como 'from modelos.cliente import Cliente'
-#   y el plan de trabajo lo pone en modelos/.
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 from modelos.entidad import Entidad
 from excepciones import ClienteInvalidoError
 import re

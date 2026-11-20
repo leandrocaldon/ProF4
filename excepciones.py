@@ -1,11 +1,3 @@
-# ======================================================================
-# INTEGRANTE 5 - Gestor, logs y simulación (rol sin asignar en el grupo)
-# ESTADO: completado por Jefferson como propuesta para que el grupo lo revise.
-# En main solo existía ClienteInvalidoError (la subió Sebastián). Se armó la
-# jerarquía de la sección 4 del plan de trabajo, con los mismos nombres.
-# Si copias este archivo al repo, borra este encabezado y deja solo el código.
-# ======================================================================
-
 """
 excepciones.py
 Excepciones personalizadas del sistema Software FJ.
